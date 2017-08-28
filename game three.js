@@ -6,7 +6,7 @@ if (computerChoice < 0.34) {
 	computerChoice = "paper";
 } else {
 	computerChoice = "scissors";
-} console.log("Computer: " + computerChoice);
+}
 
 function compare(choice1, choice2) {
     if (choice1 === choice2) {
@@ -29,6 +29,10 @@ function compare(choice1, choice2) {
         } else {
             return "scissors wins!";
         }
+    }
+    if (userChoice !== "paper" || "scissors" || "rock") {
+        return computerChoice = null, userChoice = 
+        "Error! Please, correct your variant";
     }
 }
 
